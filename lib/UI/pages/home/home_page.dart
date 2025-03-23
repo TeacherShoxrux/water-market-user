@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:water_market_user/UI/pages/home/widget/banner.dart';
 import 'package:water_market_user/UI/pages/home/widget/product_card.dart';
 import 'package:water_market_user/UI/pages/products/products_screen.dart';
 import '../markets/markets_screen.dart';
@@ -45,6 +46,8 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 15),
 
+            BannerCarousel(),
+            const SizedBox(height: 20),
             // Categories
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -54,6 +57,7 @@ class HomeScreen extends StatelessWidget {
                 CategoryChip(label: "Flavored Water"),
               ],
             ),
+
             const SizedBox(height: 20),
 
             // Featured Products
